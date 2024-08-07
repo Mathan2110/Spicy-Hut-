@@ -1,0 +1,143 @@
+:root{
+    --red:crimson;
+    --green:#53BF9D;
+    --yellow:#FFC54D;
+    --white:whitesmoke;
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image:url(images/pexels-thepaintedsquare-858094.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 240px;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    justify-content:space-around;
+}
+
+nav a:hover{
+    color:var(--white);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tagline1{
+    color: var(--red);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color: var(--yellow);
+}
+
+.maintext div{
+    margin-top:0.75em;
+}
+
+.maintext button{
+    width: 20vh;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .6em;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight:bolder;
+    border-color: var(--green);
+}
+
+.maintext button:hover{
+    background-color:rgb(235, 84, 114);
+    border-color:rgb(235, 84, 114) ;
+}
+
+.menu{
+    display: grid;
+    background:linear-gradient(to right,rgb(119, 118, 118),rgb(65, 61, 61));
+    color: var(--white);
+    font-size:1.4em;
+    grid-template-columns:repeat(auto-fit,minmax(335px,1fr));
+}
+
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(119, 118, 118),rgb(65, 61, 61));
+    color: var(--red);
+    font-size: 2.5em;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: .7em;
+}
+
+.menu th{
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+}
+
+@media screen and (min-width:668px) and (max-width:1010px){
+    .maincourse{
+        grid-row:span 2;
+    }
+}
+
+.locations h2{
+    margin: 0px;
+    color: var(--green);
+    margin-bottom: 0.7em;
+}
+
+.locations{
+    background:linear-gradient(to right,rgb(119, 118, 118),rgb(65, 61, 61));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 286;
+    color: var(--white);
+}
+
+i{
+    margin-right: 0.3em;
+}
